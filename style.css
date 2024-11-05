@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+    background-color: #000000;
+}
+
+#cantainer{
+    position: absolute;
+    background-color: #4444;
+   height: 30vw;
+    width:50vw;
+    left: 25%;
+    top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+
+}
+#display{
+    color:#ffff;
+    top: 4vw;
+    position: relative;
+    left: 20%;
+    font-size: 7vw;
+}
+#controls{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw;
+    top: 3vw;
+}
+
+#controls button{
+    height: 3vw;
+    width: 8vw;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 0.4vw;
+    border: 2px solid #0000;
+    font-size: 1.5vw;
+    left:1.5em;
+    cursor: pointer;
+   
+}
+#controls button:hover{
+    background-color: black;
+    color:#ffff;
+}
+
+#laps{
+    position: relative;
+    left:35% ;
+    top: 5vw;
+    font-size: 30px;
+}
+#laplist::-webkit-scrollbar {
+    display: none;
+}
+
+#laplist{
+    max-height: 100px;
+    overflow-y: auto;
+    list-style: none;
+    color: #ffff;
+}
+
+#lapList li {
+    background-color: #444;
+    color: white;
+  }
